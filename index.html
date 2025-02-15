@@ -3,68 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suresh Dharavath - Portfolio</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 20px; padding: 20px; }
-        .container { max-width: 800px; margin: auto; }
-        h1, h2 { color: #333; }
-        .contact, .section { margin-bottom: 20px; }
-    </style>
+    <title>My_Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="container">
-        <h1>Suresh Dharavath</h1>
-        <p>Hyderabad | 8639245368 | <a href="mailto:dharavathsuresh1608@gmail.com">dharavathsuresh1608@gmail.com</a></p>
-        <p><a href="https://linkedin.com/in/suresh-d-data-engineer444" target="_blank">LinkedIn</a></p>
-        
-        <div class="section">
-            <h2>About Me</h2>
-            <p>Data Engineer with 3 years of experience specializing in Snowflake, Azure Data Bricks, Python, SQL, ETL, and Airflow.</p>
+    <!-- Home Page -->
+    <div id="header">
+        <!-- Circular Profile Image -->
+        <div class="image-container">
+            <img src="./1.png" alt="Suresh Dharavath">
         </div>
-        
-        <div class="section">
-            <h2>Work Experience</h2>
-            <h3>Data Engineer @ Cognizant Technology Solutions</h3>
-            <p>July 2022 - Present</p>
-            <ul>
-                <li>Implemented and optimized data pipelines for batch and stream processing.</li>
-                <li>Developed scalable, repeatable, and secure data structures and pipelines.</li>
-                <li>Managed data sources including Azure Blob Storage, Azure Data Lake.</li>
-                <li>Optimized Snowflake SQL queries and integrated various data sources.</li>
-            </ul>
-        </div>
-        
-        <div class="section">
-            <h2>Projects</h2>
-            <h3>IRB Holdings (Inspire Brands)</h3>
-            <ul>
-                <li>Utilized Azure Cloud on Polaris platform.</li>
-                <li>Employed Spark, Azure Data Lake Store, Data Bricks, and Snowflake.</li>
-                <li>Implemented Airflow for automated orchestration.</li>
-            </ul>
-        </div>
-        
-        <div class="section">
-            <h2>Education</h2>
-            <p><strong>Bachelor of Technology in ECE</strong> - Gokaraju Rangaraju Institute of Engineering and Technology (2019-2022) - GPA: 8.7</p>
-            <p><strong>Diploma in ECE</strong> - Govt. Polytechnic College (2016-2019) - 91%</p>
-        </div>
-        
-        <div class="section">
-            <h2>Skills</h2>
-            <p>SQL, Python, Azure, Airflow, PySpark, Snowflake, Atlassian Tools, Data Validation, Databricks, Agile Methodology</p>
-        </div>
-        
-        <div class="section">
-            <h2>Certifications</h2>
-            <ul>
-                <li>Microsoft Certified: Azure Data Engineer Associate (DP203)</li>
-                <li>Microsoft Certified: Azure Data Fundamentals (DP900)</li>
-                <li>Databricks Certified: Data Engineer Professional</li>
-                <li>Databricks Certified: Data Engineer Associate</li>
-                <li>Databricks Certified: Data Analyst Associate</li>
-                <li>Google Cloud Certified - Generative AI</li>
-            </ul>
+
+        <div class="container">
+            <nav>
+                <h1 id="logo"><span>Suresh</span> Dharavath</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div id="header-style">
+                <h1>Hi, I'm <span id="span1">Suresh</span><br><span id="span2"></span></h1>
+                <p>Architecting and refining resilient data pipelines leveraging Snowflake, Azure Databricks, Python, SQL, ETL, and Airflow</p>
+            </div>
         </div>
     </div>
 </body>
