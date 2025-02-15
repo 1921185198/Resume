@@ -1,0 +1,30 @@
+/* Centering the circular image inside the header */
+.image-container {
+    position: absolute;
+    top: 20px;  /* Adjust vertical positioning */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px; /* Circle size */
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid white; /* Optional border */
+    background-color: white; /* Ensure image stands out */
+}
+
+/* Styling the circular image */
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fully covers the circular area */
+    border-radius: 50%;
+}
+
+/* Responsive Adjustments for Mobile Screens */
+@media only screen and (max-width: 600px) {
+    .image-container {
+        width: 120px; /* Adjust size for smaller screens */
+        height: 120px;
+        top: 10px; /* Reduce top margin */
+    }
+}
